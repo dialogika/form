@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Form XXX - Dialogika</title>
+  <meta content="Form: XXX" name="description">
+  <meta content="Dialogika Form" name="keywords">
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="dialogika.co" /> 
+  <meta property="og:site" content="dialogika.co/" />
+  <meta property="og:title" content="Form XXX - Dialogika"/> 
+  <meta property="og:image" content="XXX" /> 
+  <meta property="og:url" content="dialogika.co/form/XXX" />
+  <meta property="og:type" content="form" />
+
+  <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;500;600;700;900&family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
+
+  <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- CSS here -->
+   <!-- <link rel="stylesheet" href="assets/vendor/epora/bootstrap.css"> -->
+   <link rel="stylesheet" href="assets/vendor/epora/meanmenu.css">
+   <link rel="stylesheet" href="assets/vendor/epora/animate.css">
+   <link rel="stylesheet" href="assets/vendor/epora/slick.css">
+   <link rel="stylesheet" href="assets/vendor/epora/backtotop.css">
+   <link rel="stylesheet" href="assets/vendor/epora/magnific-popup.css">
+   <link rel="stylesheet" href="assets/vendor/epora/nice-select.css">
+   <link rel="stylesheet" href="assets/vendor/epora/ui-icon.css">
+   <link rel="stylesheet" href="assets/vendor/epora/elegentfonts.css">
+   <link rel="stylesheet" href="assets/vendor/epora/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/vendor/epora/spacing.css">
+
+  <!-- Vendor Epora -->
+    <link rel="stylesheet" href="assets/vendor/epora/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/animate.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/slick.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/backtotop.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/nice-select.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/ui-icon.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/elegentfonts.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/vendor/epora/css/spacing.css">
+    <link href="assets/vendor/epora/css/style.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet"/>
+    
+
+  <!-- Spreadsheet API Form Pendaftaran -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"      
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/4KqN81tzxXI1cZrA/",
+          type:"post",
+          data:$("#myForm").serializeArray(),
+          headers:{
+            accessKey: "130c88785906d5a31f050496d0c6a072",
+            secretKey: "1f1459b69ff47851d4929a789721a0c8"},
+          success: function(){
+            alert("Terima kasih Admin akan Segera Menghubungi Anda :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+
+      function Subcription (){
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/18511/",
+          type:"post",
+          data:$("#subcriptions").serializeArray(),
+          success: function(){
+            // $('#subcription-modal').modal('show');
+            // open("https://link.dialogika.co/open-whatsapp-group");
+            window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+    </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+
+  <!-- Pixel Facebook -->
+    <!-- DEC 2021 -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '916674555903437');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- END DEC 2021 -->
+  <!-- End Pixel Facebook -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148836422-2');
+    </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2828594,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  <!-- End Hotjar -->
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:hello@dialogika.co">hello@dialogika.co</a>
+        <i class="bi bi-phone"></i> <a href="https://link.dialogika.co/wasap-2597-dialogika-co">+62 851-6299-2597</a>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div><!-- End Top Bar -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <a href="https://dialogika.co/" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul id="navbar-navlist">
+          <li><a class="nav-link scrollto active" data-scroll href="#hero">Home</a></li>
+          <li class="nav-categories"><a href="#"><span>Program</span><i
+                class='bx bx-chevron-down-circle'></i></a>
+            <ul>
+              <li>
+                <span class="badge rounded-blue">Online</span>&nbsp;
+                <span class="badge rounded-blue">Subscribe</span>&nbsp;
+              </li>
+              <li>
+                <span class="badge rounded-blue">Online</span>&nbsp;
+                <span class="badge rounded-blue">Package</span>
+              </li>
+              <li>
+                <span class="badge rounded-red">Private</span>&nbsp;
+                <span class="badge rounded-blue">Package</span>&nbsp;
+              </li>
+              <li>
+                <span class="badge rounded-blue">Online</span>&nbsp;
+                <span class="badge rounded-orange">Advance</span>&nbsp;
+              </li>
+              <li>
+                <a href="../corporate/">
+                  <span class="badge rounded-green">Corporate</span>&nbsp;
+                  <span class="badge rounded-blue">Training</span>&nbsp;
+                </a>
+              </li>
+              <li><a href="../subscribe/action-play.html"><i class='bx bxs-chevron-right'></i>&nbsp;Action Play</a></li>
+              <li>
+                <a href="../program/kids-class.html"><i class='bx bxs-chevron-right'></i>&nbsp;Kids Class</a>
+                <span class="badge rounded-blue-turtle">Kids</span>
+              </li>
+              <li>
+                <a href="../private/basic-private.html"><i class='bx bxs-chevron-right'></i>&nbsp;Basic Private</a>
+                <span class="badge rounded-blue">Online</span>
+              </li>
+              <li><a href="../program/presentation-class.html"><i class='bx bxs-chevron-right'></i>&nbsp;Presentation
+                  Class</a>
+              </li>
+              <li><a href="../corporate/basic-training.html"><i class='bx bxs-chevron-right'></i>&nbsp;Basic Training</a>
+              </li>
+              <li>
+                <a href="../subscribe/kids-play.html"><i class='bx bxs-chevron-right'></i>&nbsp;Kids Play</a>
+                <span class="badge rounded-blue-turtle">Kids</span>
+              </li>
+              <li>
+                <a href="../program/basic-plus.html"><i class='bx bxs-chevron-right'></i>&nbsp;Basic Plus</a>
+              </li>
+              <li>
+                <a href="../private/first-private.html"><i class='bx bxs-chevron-right'></i>&nbsp;First Private</a>
+                <span class="badge rounded-green">Jogja</span>
+              </li>
+              <li>
+                <a href="../program/voice-over.html"><i class='bx bxs-chevron-right'></i>&nbsp;Voice Over</a>
+              </li>
+              <li>
+                <a href="../corporate/advance-training.html"><i class='bx bxs-chevron-right'></i>&nbsp;Advance Training</a>
+              </li>
+              <li>
+                <span class="badge rounded-green">Offline</span>&nbsp;
+                <span class="badge rounded-blue">Subscribe</span>&nbsp;
+              </li>
+              <li>
+                <span class="badge rounded-green">Offline</span>&nbsp;
+                <span class="badge rounded-blue">Package</span>&nbsp;
+              </li>
+              <li>
+                <a href="../private/first-private.html"><i class='bx bxs-chevron-right'></i>&nbsp;Kids Private</a>
+                <span class="badge rounded-blue-turtle">Kids</span>&nbsp;
+                <span class="badge rounded-blue">Online</span>&nbsp;
+              </li>
+              <li>
+                <span class="badge rounded-green">Offline</span>&nbsp;
+                <span class="badge rounded-blue">Subscribe</span>&nbsp;
+              </li>
+              <li>
+                <a href="../corporate/certified-training.html"><i class='bx bxs-chevron-right'></i>&nbsp;Certified
+                  Training</a>
+                <span class="badge rounded-grey">Coming Soon</span>
+              </li>
+              <li>
+                <a href="../subscribe/jogja-play.html"><i class='bx bxs-chevron-right'></i>&nbsp;Jogja Play</a>
+              </li>
+              <li>
+                <a href="../program/first-class.html"><i class='bx bxs-chevron-right'></i>&nbsp;First Class</a>
+                <span class="badge rounded-green">Jogja</span>
+              </li>
+              <li>
+                &nbsp;
+              </li>
+              <li>
+                <a href="../program/emcee-class.html"><i class='bx bxs-chevron-right'></i>&nbsp;Master of Ceremony</a>
+              </li>
+              <li></li>
+              <li>&nbsp;</li>
+              <li>
+                <a href="../program/royal-class-jakarta.html"><i class='bx bxs-chevron-right'></i>&nbsp;Royal Class</a><span
+                  class="badge rounded-green">Jakarta</span>
+              </li>
+              <li>&nbsp;</li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../service/"><span>Service</span><i class='bx bx-chevron-down-circle'></i></a>
+            <ul>
+              <li class="dropdown">
+                <a href="../service/counseling/"><span>Counseling</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="../service/counseling/relationship.html">
+                      <span>Relationship
+                        <sup>&nbsp;</sup>
+                      </span>
+                    </a></li>
+                  <li><a href="../service/counseling/parenting.html">
+                      <span>Parenting
+                        <sup>&nbsp;</sup>
+                      </span>
+                    </a></li>
+                  <li><a href="../service/counseling/children.html">
+                      <span>Children
+                        <sup>&nbsp;</sup>
+                      </span>
+                    </a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="../service/counseling/request.html">
+                      <span>Request</span>
+                    </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="../service/mentoring/"><span>Mentoring</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="../service/mentoring/teenager.html"><span>Teenager</span></a></li>
+                  <li><a href="../service/mentoring/self-development.html"><span>Self Development</span></a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="../service/mentoring/request.html"><span>Request</span></a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="../service/agency/"><span>Agency</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="../service/agency/emcee.html"><span>Master of Ceremony</span></a></li>
+                  <li><a href="../service/agency/host.html"><span>Host</span></a></li>
+                  <li><a href="../service/agency/voice-over.html"><span>Voice Over</span></a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="../service/agency/request.html"><span>Request</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="shop/"><span>Shop</span><i class='bx bx-chevron-down-circle'></i></a>
+            <ul>
+              <li><a href="../shop/book.html">Book</a></li>
+              <li><a href="../shop/module.html">Module</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="../shop/">Discover</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="../event/">Event</a></li>
+          <li><a class="nav-link" href="https://dialogika.co/blog">Blog</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="https://www.dialogika.co/promo/" target="__blank" class="blue-btn position-relative"><span class="d-none d-md-inline"> Claim</span>
+        Promo
+        <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
+          <i class='bx bxs-alarm-exclamation bx-tada'></i>
+          <em class="countdown" data-count="2025/12/2" data-template="&nbsp;%m:%s"
+            style="font-family: 'Nunito',sans-serif;font-style: normal;"></em>
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </a>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>&nbsp;</h2>
+        <ol>
+          <li><a href="https://dialogika.co/index.html">Home</a></li>
+          <li><a href="https://dialogika.co/form/" >Form</a></li>
+          <li><a href="https://dialogika.co/form/XXX">XXX</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs Section -->
+
+  <main id="main">
+
+    <!-- breadcrumb-area -->
+    <section class="breadcrumb__area include-bg pt-150 pb-150 breadcrumb__overlay" data-background="XXX" >
+       <div class="container">
+          <div class="row">
+             <div class="col-xxl-12">
+                <div class="breadcrumb__content p-relative z-index-1">
+                   <h3 class="breadcrumb__title mb-20">XXX Form</h3>
+                   <div class="breadcrumb__list">
+                      <span><a href="../index.html">Home</a></span>
+                      <span class="dvdr"><i class="fa-regular fa-angle-right"></i></span>
+                      <span class="sub-page-black">Form</span>
+                      <span class="dvdr"><i class="fa-regular fa-angle-right"></i></span>
+                      <span class="sub-page-black">XXX</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section><!-- breadcrumb-area-end -->
+
+    <!-- coupon-area start -->
+    <section class="coupon-area pt-100 pb-30 wow fadeInUp" style="background-color: #fff;margin-bottom: -85px;">
+       <div class="container">
+         <div class="row"> &nbsp;
+         </div>
+      </div>
+    </section><!-- coupon-area end -->
+
+    <!-- checkout-area start -->
+    <section class="checkout-area pb-70 wow fadeInUp" style="background-color: #fff;">
+      <div class="container">
+       <form action="javascript:void" method="post" id="myForm" role="form" onsubmit="SubForm();">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+           <div class="checkbox-form">
+              <h3>XXX Form</h3>
+              <div class="row">
+                    <div class="col-md-12">
+                       <div class="country-select">
+                          <label>Country <span class="required">*</span></label>
+                          <select name="Country">
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Singapura">Singapura</option>
+                                <option value="Inggris">Inggris</option>
+                                <option value="Jepang">Jepang</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="United State">United States</option>
+                          </select>
+                          <select class="d-none" name="Timestamp">
+                            <option id="timestamp"></option>
+                          </select>
+                          <script>
+                            // get date
+                            var today = new Date();
+                            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+                            var time = today.getHours() + ":" + today.getMinutes();
+                            var dateTime = date+'    '+time;
+                            document.getElementById("timestamp").innerHTML = dateTime;
+                          </script>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="checkout-form-list">
+                          <label>Full Name <span class="required">*</span></label>
+                          <input type="text" placeholder="" id="name" name="Name" />
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="checkout-form-list">
+                          <label>Whatsapp <span class="required">*</span></label>
+                          <input type="tel" placeholder="085162992597" id="whatsapp" name="Whatsapp" />
+                       </div>
+                    </div>
+                    <div class="col-md-12">
+                       <div class="checkout-form-list">
+                          <label>Profession</label>
+                          <input type="text" placeholder="Siswa/Mahasiswa/Pekerja" id="work" name="Work" />
+                       </div>
+                    </div>
+                    <div class="col-md-12">
+                       <div class="checkout-form-list">
+                          <label>Address <span class="required">*</span></label>
+                          <input type="text" placeholder="Street address" name="Address" id="address" />
+                       </div>
+                    </div>
+                    <div class="col-md-12">
+                       <div class="checkout-form-list">
+                          <input type="text" placeholder="Apartment, suite, unit etc. (optional)" name="Building"/>
+                       </div>
+                    </div>
+                    <div class="col-md-12">
+                       <div class="checkout-form-list">
+                          <label>Town / City <span class="required">*</span></label>
+                          <input type="text" placeholder="Town / City" name="City" id="city" />
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="checkout-form-list">
+                          <label>Know's From <span class="required">*</span></label>
+                          <input type="text" placeholder="Tau dari..." name="Channel"/>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="checkout-form-list">
+                          <label>Postcode / Zip </label>
+                          <input type="text" placeholder="Postcode / Zip" name="Zip" />
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="checkout-form-list">
+                          <label>Email Address <span class="required">*</span></label>
+                          <input type="email" placeholder="" name="Email" />
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="checkout-form-list">
+                          <label>Instagram <span class="required">*</span></label>
+                          <input type="text" placeholder="@username" name="Social" />
+                       </div>
+                    </div>
+                    <div class="order-notes">
+                       <div class="checkout-form-list">
+                          <label>Order Notes</label>
+                          <textarea id="checkout-mess" cols="30" rows="10" name="Note" id="note"
+                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                       </div>
+                    </div>
+              </div>
+           </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+           <div class="your-order mb-30" id="products">
+              <h3>Your order</h3>
+              <div class="your-order-table table-responsive">
+                    <table>
+                       <thead>
+                          <tr>
+                             <th class="product-name">Product</th>
+                             <th class="product-total">Total</th>
+                          </tr>
+                       </thead>
+                       <tbody>
+                          <tr class="cart_item">
+                                <td class="product-name">
+                                   Nama_Kelas <strong class="product-quantity"> × 1</strong>
+                                </td>
+                                <td class="product-total">
+                                   <span class="amount">Rp. XXX.000</span> <!-- harga normal -->
+                                </td>
+                                <select name="Program" id="program" class="d-none">
+                                  <option>XXX</option>
+                                </select>
+                          </tr>
+                          <tr class="cart_item">
+                                <td class="product-name">
+                                   <strong class="product-quantity">Special</strong> Discount
+                                </td>
+                                <td class="product-total">
+                                   <span class="amount">XXX%</span>
+                                </td>
+                          </tr>
+                       </tbody>
+                       <tfoot>
+                          <tr class="cart-subtotal">
+                                <th>Unique Number</th>
+                                <td>Rp. <span class="amount" id="amount"></span></td>
+                          </tr>
+                          <tr class="shipping">
+                                <th rowspan="2">Details</th>
+                                <td>
+                                   <ul class="list-group">
+                                    <li class="list-group-item" style="background-color: #0B2B6A; color:#fff">Program : XXX</li>
+                                    <li class="list-group-item">Type: General/Private</li>
+                                    <li class="list-group-item">Meeting: 7x</li>
+                                    <li class="list-group-item">Duration: XXX</li>
+                                    <li class="list-group-item">Total Member: 10</li>
+                                    <li class="list-group-item">Level: Beginner</li>
+                                    <li class="list-group-item">Via: Online/Offline</li>
+                                    <li class="list-group-item">Flexible/Static</li>
+                                    <!-- <li class="list-group-item">Day: XXX</li> -->
+                                    <!-- <li class="list-group-item">Time: XXX</li> -->
+                                  </ul>
+                                </td>
+                          </tr>
+                          <tr class="shipping">
+                              <td>
+                                <ul class="list-group">
+                                  <li class="list-group-item" style="background-color: #0B2B6A; color:#fff"> Type: XXX</li>
+                                  <li class="list-group-item">Payment: One Time/Subscibe</li>
+                                  <li class="list-group-item">Meeting: 7x</li>
+                                  <li class="list-group-item">Guarantee: Yes/No</li>
+                                  <li class="list-group-item">Recording: Yes/No</li>
+                                </ul>
+                              </td>
+                          </tr>
+                          <tr class="order-total">
+                                <th>Total</th>
+                                <td><strong><span class="amount" >Rp. XXX.<span id="amount-total"></span></span></strong>
+                                </td>
+                                <select name="Amount" id="amount" class="d-none">
+                                  <option>XXX</option>
+                                </select>
+                                <script>
+                                   // Generate a random number between 100 and 999
+                                    const randomNumber = Math.floor(Math.random() * 900) + 100;
+                                    
+                                    // Get the HTML elements to display the random number
+                                    const randomNumberHeadingElement = document.getElementById("amount");
+                                    const randomNumberElement = document.getElementById("amount-total");
+                                    
+                                    // Set the inner text of the HTML elements to the random number
+                                    randomNumberHeadingElement.innerText = randomNumber;
+                                    randomNumberElement.innerText = randomNumber;
+                                </script>
+                          </tr>
+                       </tfoot>
+                    </table>
+              </div>
+              <div class="payment-method">
+                 <div class="accordion" id="checkoutAccordion">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header" id="checkoutOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bankOne" aria-expanded="true" aria-controls="bankOne">
+                          Caution! Read This
+                          </button>
+                       </h2>
+                       <div id="bankOne" class="accordion-collapse collapse show" aria-labelledby="checkoutOne" data-bs-parent="#checkoutAccordion">
+                          <div class="accordion-body">
+                            <ol>
+                              <li>Isikan Detail Data yang Benar</li>
+                              <li>Lakukan Pembayaran pada rekening yang tersedia</li>
+                              <li>DSimpan bukti transfernya <b>PENTING</b></li>
+                              <li>Klik Tombol <b>Confirmation</b></li>
+                              <li>Setelah Anda Click Tombol Confirmation Anda akan ke Redirect ke Nomor Whatsapp Dialogika</li>
+                              <li>Kirimkan Bukti Transfer ke Admin <b>PENTING</b></li>
+                              <li>Tunggu Balasan Admin</li>
+                              <li>Anda akan Masuk ke Group Whatsapp</li>
+                            </ol>
+                          </div>
+                    </div>
+                    <div class="accordion-item">
+                       <h2 class="accordion-header" id="paymentTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment" aria-expanded="false" aria-controls="payment">
+                          Direct Bank Transfer
+                          </button>
+                       </h2>
+                       <div id="payment" class="accordion-collapse collapse" aria-labelledby="paymentTwo" data-bs-parent="#checkoutAccordion">
+                          <div class="accordion-body">
+                          <ul class="list-group">
+                            <li class="list-group-item" style="background-color:#01a1ad; color:#fff;">Bank BCA Syariah</li>
+                            <li class="list-group-item">0460227911</li>
+                            <li class="list-group-item">PT. Dialogika Persona Indonesia</li>
+                          </ul><br>
+                          <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #233e89; color:#fff;">Bank BCA </li>
+                            <li class="list-group-item">1260761052</li>
+                            <li class="list-group-item">Muhammad Ghufran Asrofi</li>
+                          </ul><br>
+                          <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #0c9f98; color:#fff;">Bank BSI </li>
+                            <li class="list-group-item">7040032511</li>
+                            <li class="list-group-item">Muhammad Ghufran Asrofi</li>
+                          </ul><br>
+                          <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #ea6c22; color:#fff;">Bank BTPN </li>
+                            <li class="list-group-item">90020307448</li>
+                            <li class="list-group-item">Muhammad Ghufran Asrofi</li>
+                          </ul>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="accordion-item">
+                       <h2 class="accordion-header" id="paypalThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paypal" aria-expanded="false" aria-controls="paypal">
+                          Rules
+                          </button>
+                       </h2>
+                       <div id="paypal" class="accordion-collapse collapse" aria-labelledby="paypalThree" data-bs-parent="#checkoutAccordion">
+                          <div class="accordion-body">
+                          <ol>
+                            <li>Khusus kelas private kelas akan di tentukan bersama di dalam group whatsapp bersama mentor </li>
+                            <li>Khusus Kelas dengan Type: Subscribe, jadwal sesuai dengan hari yang ada di dalam website</li>
+                            <li>Khusus kelas Paket</li>
+                            <li>Garansi mengulang bisa di claim apabila kelas tidak di hadiri dengan menghubungi admin kelas yang ada di didalam website</li>
+                            <li>Kelas online berjalan via zoom</li>
+                            <li>Apabila 1x24 setelah transfer tidak ada balasan dari Admin segera kontak ulang admin</li>
+                            <li>Recording dalam bentuk google drive dan bisa Anda check di Whatsapp Group Description</li>
+                            <li>Uang yang sudah dibayar tidak bisa dikembalikan</li>
+                          </ol>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col-md-12">
+                   <div class="checkout-form-list create-acc d-flex align-content-center">
+                      <input id="cbox" type="checkbox" checked />
+                      <label class="small">Saya sudah Setuju dengan Rules</label>
+                      <input id="cbox" type="checkbox" checked />
+                      <label class="small">Saya sudah Paham dengan dengan Alur</label>
+                   </div>
+                </div>
+                 <div class="order-button-payment mt-20">
+                    <button type="submit" class="tp-btn send_contact" style="border: none;">Confirmation</button>
+                 </div>
+              </div>
+           </div>
+          </div>
+        </div>
+       </form>
+      </div>
+    </section>
+    <!-- checkout-area end -->  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+  
+    <div class="footer-top">
+      <div class="container">
+        <div class="row justify-content-between">
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><img src="assets/img/white-logo.png" class="footer-logo" alt="Kelas Public Speaking Jogja" /></h3>
+            <p>
+              Wadah pengembangan diri membangun aura positif sekaligus meningkatkan kualitas skill, karir hingga level
+              kehidupan Anda.
+            </p><br>
+            <p>Kami memberikan pelatihan Kelas Public Speaking karena dengan menguasai Public Speaking, mental, perilaku,
+              penampilan hingga sikap Anda terbentuk.</p><br>
+            <h4 class="d-flex justify-content-between">Contact Us<i class='bx bx-chevron-down d-md-none'></i></h4>
+            <div class="social-link d-flex mt-3">
+              <a href="https://link.dialogika.co/wasap-2597-dialogika-co"
+                class="d-flex align-items-center justify-content-center"><i class="bx bxl-whatsapp"></i></a>
+              <a href="mailto:hello@dialogika.co" class="d-flex align-items-center justify-content-center"><i
+                  class="bi bi-envelope"></i></a>
+            </div>
+            <hr />
+            <p>Punya pertanyaan mengenai Dialogika?</p>
+            <br>
+            <p>
+              <strong>Phone:</strong> +62 851-6299-2597<br>
+              <strong>Email:</strong> hello@dialogika.co<br>
+            </p>
+            <br><br>
+            <h4 class="d-flex justify-content-between">Follow Us<i class='bx bx-chevron-down d-md-none'></i></h4>
+            <div class="social-link d-flex mt-3">
+              <a href="https://link.dialogika.co/twitter" class="d-flex align-items-center justify-content-center"><i
+                  class="bi bi-twitter"></i></a>
+              <a href="https://link.dialogika.co/facebook" class="d-flex align-items-center justify-content-center"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://link.dialogika.co/instagram" class="d-flex align-items-center justify-content-center"><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://link.dialogika.co/linkedin" class="d-flex align-items-center justify-content-center"><i
+                  class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-md-6 footer-links accordion">
+            <div class="d-none d-md-block">
+              <h4>Best Program</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../program/basic-plus.html">Online Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../program/first-class.html">Offline Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../program/kids-class.html">Kids Class</a>
+                </li>
+              </ul><br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-best-program" class="d-flex justify-content-between " data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Best Program</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-best-program" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../program/basic-plus.html">Online Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../program/first-class.html">Offline Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../program/kids-class.html">Kids Class</a>
+                </li>
+              </ul>
+            </div><br>
+  
+            <div class="d-none d-md-block">
+              <h4>Corporate Program</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../corporate/workshop.html">Workshop</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../corporate/webinar.html">Webinar</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../corporate/class.html">Class</a>
+                </li>
+              </ul><br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-corporate-program" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Corporate Program</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-corporate-program">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../corporate/workshop.html">Workshop</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../corporate/webinar.html">Webinar</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../corporate/class.html">Class</a>
+                </li>
+              </ul>
+            </div><br>
+  
+  
+            <div class="widget d-none d-md-block">
+              <h4>Private Program</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../mentor/private-online.html">Online Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../mentor/private-offline.html">Offline Class</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../mentor/private-kids.html">Kids Only</a>
+                </li>
+              </ul><br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-private-program" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Private Program</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-private-program" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../private/basic-private.html">Online Private</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../private/first-private.html">Offline Private</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../private/kids-private.html">Kids Private</a>
+                </li>
+              </ul>
+            </div><br>
+  
+  
+            <div class="widget d-none d-md-block">
+              <h4>Career Info</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../about/registration.html">Team</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../mentor/registration.html">Mentor</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../intern/index.html">Internship</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-career-info" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Career Info</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-career-info" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../about/registration.html">Team</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../mentor/registration.html">Mentor</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../intern/index.html">Internship</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+  
+            <div class="widget d-none d-md-block">
+              <h4>Useful Link</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/blog">Blog Dialogika</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/mentor">Mentor Dialogika</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-useful-link" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Useful Link</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-useful-link" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/blog">Blog Dialogika</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../mentor/index.html">Mentor Dialogika</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+  
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <div class="widget d-none d-md-block">
+              <h4>Our Service</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/">Counseling</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/mentoring/">Mentoring</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/">Agency</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-our-service" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Our Service</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-our-service" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/">Counseling</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/mentoring/">Mentoring</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/">Agency</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+  
+  
+            <div class="widget d-none d-md-block">
+              <h4>Event Agency</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/emcee.html">Master of Ceremony</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/host.html">Host</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/moderator.html">Moderator</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-event-agency" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Event Agency</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-event-agency" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/emcee.html">Master of Ceremony</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/host.html">Host</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/agency/moderator.html">Moderator</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+  
+  
+            <div class="widget d-none d-md-block">
+              <h4>Counseling</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/relationship.html">Relationship</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/parenting.html">Parenting</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/kids.html">Children</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-counseling-program" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>Counseling</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-counseling-program" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/relationship.html">Relationship</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/parenting.html">Parenting</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="../service/counseling/kids.html">Children</a>
+                </li>
+              </ul>
+              <br>
+            </div>
+  
+  
+            <div class="widget d-none d-md-block">
+              <h4>About Dialogika</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/">About Us</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/faq.html">FAQ</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/help.html">Help Center</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/privacy.html">Privacy Policy</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/terms.html">Terms & Agreements</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-block d-md-none">
+              <a href="#footer-about-dialogika" class="d-flex justify-content-between" data-bs-toggle="collapse"
+                id="footer-accordion">
+                <h4>About Dialogika</h4><i class='bx bx-chevron-down d-md-none'></i>
+              </a>
+              <ul class="accordion-collapse collapse show" id="footer-about-dialogika" data-bs-parent=".footer-links">
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/">About Us</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/faq.html">FAQ</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/help.html">Help Center</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/privacy.html">Privacy Policy</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i>
+                  <a href="https://dialogika.co/about/terms.html">Terms & Agreements</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4 class="d-flex justify-content-between">Join Whatsapp Group Community<i
+                class='bx bx-chevron-down d-md-none'></i></h4>
+            <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
+            <form action="javascript:void" role="form" id="subcriptions" method="post">
+              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Join Now"
+                onclick="Subcription()">
+            </form>
+            <br><br>
+            <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
+            <p><i class="bx bx-chevron-down"></i> Bank Transfer</p>
+            <img src="assets/img/bank.png" />
+            <br><br>
+            <p><i class="bx bx-chevron-down"></i> E-Wallet</p>
+            <img src="assets/img/wallet.png" />
+  
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted" style="color:#fff;">Telah Terdaftar Oleh</h6>
+                <img src="assets/img/ham.png" class="" /><br>
+                <p>
+                  <strong>Nomor:</strong> AHU-0118640.AH.01.11.TAHUN 2022<br>
+                  <strong>Registrasi: </strong>4022062334106037<br />
+                </p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+  
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dialogika</span></strong> | PT. Dialogika Persona Indonesia
+        </div>
+  
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://link.dialogika.co/wasap-2597-dialogika-co" class="google-plus"><i
+            class="bx bxl-whatsapp"></i></a>
+        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+  <!-- ======= Modal Nofication ======= -->
+  <div class="modal fade" id="notifications" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content card text-center">
+        <div class="modal-header card-header">
+          <span class="badge rounded-blue">Lembar Terima Kasih</span>
+        </div>
+        <div class="modal-body card-body">
+          <div class="section-title">
+            <h2 class="dumpil">Wait for Us</h2>
+            <h2 class="tengah">Admin Kami Segera Menghubungi Anda</h2>
+            <p>Mohon ditunggu sebentar anda akan segera ke redirect ke aplikasi whatsapp</p>
+          </div>
+          <a href="#" class="blue-btn" data-bs-dismiss="modal">Close This Message</a>
+        </div>
+        <div class="modal-footer card-footer text-muted">
+          Mohon menunggu
+        </div>
+      </div>
+    </div>
+  </div><!-- End Modal -->
+
+  <!-- ======= Modal Subcription ======= -->
+    <div class="modal fade" id="subcription-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Terima kasih sudah melakukan subcription dengan email anda, nantikan update blog,berita,diskonan dari Dialogika</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Modal -->
+  
+
+  <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+
+  <!-- JS here -->
+   <!-- <script src="assets/js/bootstrap-bundle.js"></script> -->
+   <script src="assets/vendor/epora/meanmenu.js"></script>
+   <script src="assets/vendor/epora/slick.js"></script>
+   <script src="assets/vendor/epora/magnific-popup.js"></script>
+   <script src="assets/vendor/epora/parallax.js"></script>
+   <script src="assets/vendor/epora/backtotop.js"></script>
+   <script src="assets/vendor/epora/nice-select.js"></script>
+   <script src="assets/vendor/epora/counterup.js"></script>
+   <script src="assets/vendor/epora/wow.js"></script>
+   <script src="assets/vendor/epora/isotope-pkgd.js"></script>
+   <script src="assets/vendor/epora/imagesloaded-pkgd.js"></script>
+   <script src="assets/vendor/epora/ajax-form.js"></script>
+   <!-- <script src="assets/vendor/epora/vendor/jquery.js"></script>
+   <script src="assets/vendor/epora/vendor/waypoints.js"></script> -->
+
+    <script src="assets/vendor/epora/swiper-bundle.js"></script>
+    <script src="assets/vendor/epora/parallax.js"></script>
+    <script src="assets/vendor/epora/meanmenu.js"></script>
+
+  <!-- Template Main JS File -->
+    <!-- <script src="assets/js/sarasa-main.js"></script> -->
+
+    <script src="assets/js/main-epora.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bar.js"></script>
+    <script src="assets/js/whatsapp/index.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('#submits').attr('disabled', true);
+        $('#formDownload').change(function () {
+            if ($('#names').val() != '' && $('#works').val() != '' && $('#domiciles').val() != '' && $('#whatsapps').val() != '') {
+                $('#submits').attr('disabled', false);
+            } else {
+                $('#submits').attr('disabled', true);
+            }
+        });
+      });
+      // get date
+      var today = new Date();
+      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      var time = today.getHours() + ":" + today.getMinutes();
+      var dateTime = date+'    '+time;
+      document.getElementById("timestamp").innerHTML = dateTime;
+    </script>
+</body>
+
+</html>
